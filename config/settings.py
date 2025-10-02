@@ -34,6 +34,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # <-- AQUI
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -143,3 +144,6 @@ CELERY_TASK_TIME_LIMIT = 30 * 60
 WHATSAPP_API_URL = 'https://graph.facebook.com/v21.0'
 WHATSAPP_VERIFY_TOKEN = os.getenv('WHATSAPP_VERIFY_TOKEN', 'meu_token_verificacao_seguro')
 WHATSAPP_APP_SECRET = os.getenv('WHATSAPP_APP_SECRET', '')
+
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
