@@ -1,0 +1,90 @@
+# =========================
+# AMBIENTE & DEPENDÊNCIAS
+# =========================
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+*.egg-info/
+*.eggs/
+pip-wheel-metadata/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# CONFIGURAÇÕES SECRETAS
+# =========================
+.env
+.env.*
+!.env.example   # mantém um arquivo de exemplo caso você queira compartilhar variáveis
+*.secret
+*.key
+
+# =========================
+# LOGS & CACHE
+# =========================
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+*.db
+*.db-journal
+*.pid
+*.seed
+*.cover
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.coveragerc
+htmlcov/
+.tox/
+.pytest_cache/
+*.spec
+
+# =========================
+# DJANGO / MIGRATIONS
+# =========================
+*/migrations/__pycache__/
+*/migrations/*.py[cod]
+*/migrations/*.py~ 
+# se quiser ignorar TODAS as migrations (cuidado!)
+# */migrations/
+
+# =========================
+# EDITORES / IDEs
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+*.DS_Store
+Thumbs.db
+
+# =========================
+# STATIC / BUILD
+# =========================
+staticfiles/
+static/
+media/
+build/
+dist/
+*.egg
+*.whl
+
+# =========================
+# OUTROS
+# =========================
+*.tgz
+*.tar.gz
+*.zip
+*.orig
+*.rej
